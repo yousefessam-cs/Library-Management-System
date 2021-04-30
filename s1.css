@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav {
+    overflow: hidden;
+    background-color: rgba(222, 184, 135, 0.5);
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 13px 16px;
+    height: 46.4px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: rgb(245, 121, 38);
+    color: black;
+}
+
+.nav .searchbar {
+    float: left;
+    margin-top: 4px;
+}
+
+.nav input[type=text] {
+    padding: 6px;
+    margin-top: 3px;
+    font-size: 17px;
+    border: none;
+}
+
+.nav .searchbar button {
+    padding: 6px 10px;
+    margin-top: 3px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .searchbar button:hover {
+    background: #ccc;
+}
+
+.nav .signIn {
+    position: absolute;
+    right: 5%;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

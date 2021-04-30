@@ -1,0 +1,323 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+}
+
+.rForm {
+    padding: 100px 120px;
+    border-width: 0px;
+}
+
+body {
+    background-image: url(images/1.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.register,
+.login,
+.profile {
+    background-color: rgba(135, 126, 104, 0.7);
+    padding: 30px 50px;
+    display: inline-block;
+    color: #f0fff0;
+    border-radius: 30px;
+}
+
+.welcome {
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 40px;
+    position: relative;
+    top: 200px;
+}
+
+.textIn {
+    font-size: 19px;
+}
+
+.box {
+    border-radius: 20px;
+    margin: 10px;
+    height: 40px;
+    width: 220px;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+
+.heading h2 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+#r1 {
+    position: relative;
+    right: 74px;
+}
+
+#r2 {
+    position: relative;
+    right: 51px;
+}
+
+.btn {
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #693914;
+    color: whitesmoke;
+}
+
+.box:focus {
+    background-color: whitesmoke;
+}
+
+#accType:focus {
+    border-radius: 0px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+#accType {
+    transition: 0.5s;
+    background-color: #693914;
+    color: whitesmoke;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(images/1.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+}
+
+.validinp:invalid {
+    background-image: url(images/crossmark.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+.validinp:valid {
+    background-image: url(images/checkmark.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+#alert {
+    position: absolute;
+    right: 34.5%;
+    bottom: 90%;
+    z-index: 10;
+    display: inline-block;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    visibility: hidden;
+}
+
+#alert1 {
+    position: absolute;
+    right: 33.5%;
+    bottom: 90%;
+    z-index: 10;
+    display: inline-block;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    visibility: hidden;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+a {
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: rgba(245, 245, 245, 0.9) !important;
+    background-blend-mode: color-burn;
+    color: black;
+    text-align: initial;
+    left: 100px;
+    top: 100px;
+    height: 600px;
+}
+
+#borrowed {
+    margin-left: 20px;
+    table-layout: fixed;
+    width: 800px;
+    text-align: center;
+    background-color: rgba(173, 158, 137, 0.63);
+}
+
+#borrowed tr {
+    height: 30px;
+    border-bottom: 2px solid grey;
+}
+
+#borrowed td {
+    overflow: hidden;
+}
+
+.scroll tbody {
+    display: block;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.scroll thead,
+.scroll tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.scroll thead {
+    width: calc(100% - 10px);
+}
+
+.scroll table {
+    width: 400px;
+}
+
+.scroll tbody::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scroll tbody::-webkit-scrollbar-track {
+    display: none;
+}
+
+.scroll tbody::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.scroll tbody::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.editProfile fieldset {
+    width: 450px;
+    text-align: left !important;
+    border: solid 5px black;
+}
+
+.profile button,
+.addBook button {
+    border: solid 2px #8f5600;
+}
+
+.editProfile button:hover {
+    border-width: 0px;
+}
+
+.editProfile {
+    text-align: right;
+}
+
+.editProfile legend {
+    margin-left: 30px;
+    background-color: #8f5600;
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+#pwError {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: center;
+}
+
+button:active {
+    background: #552d0f !important;
+    -webkit-box-shadow: inset 0px 0px 5px #2b1902;
+    -moz-box-shadow: inset 0px 0px 5px #2b1902;
+    box-shadow: inset 0px 0px 5px #2b1902;
+}
+
+.addBook {
+    color: black !important;
+    padding: 30px;
+    width: 1000px;
+    display: inline-block;
+    text-align: center;
+}
+
+.addBook table {
+    background-color: rgba(172, 172, 172, 0.9);
+    display: inline-block;
+}
+
+.addBook td {
+    background-color: rgba(245, 245, 245, 0.9);
+    height: 50px;
+    padding-left: 10px;
+}
+
+.profile input {
+    border: solid 1px #8f5600;
+}
+
+.browse {
+    width: 1500px !important;
+    background-color: rgba(245, 245, 245, 0.911);
+    color: black;
+    overflow: hidden;
+}
+
+.browse tr {
+    height: 50px;
+    widows: 150px;
+    border-bottom: 2px solid #7e7771d5;
+}
+
+.browse thead {
+    padding-top: 30px;
+    background-color: #7e7771d5;
+    width: 100% !important;
+    color: whitesmoke;
+}
+
+.center {
+    display: inline-block;
+}
+
+.borrow>input {
+    width: 400px;
+}
